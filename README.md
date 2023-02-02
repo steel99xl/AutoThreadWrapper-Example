@@ -12,3 +12,6 @@ the partern can be repeated indeffinetly
 # Requierments
 C++ 17 or newer
 libcurl 
+
+# Build
+```clang++ -std=c++17 -lcurl main.cpp -o sd```
