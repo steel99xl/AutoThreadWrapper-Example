@@ -1,5 +1,5 @@
 # SillyDownloader
-SD (SillyDownlaoder) main goal is to be an example of the ```AutoThreadWraper```
+SD (SillyDownlaoder) main goal is to be an example of the ```AutoThreadWrapper```
 in a real world use
 
 A simple UI will let you specify links to download from and the name of the
