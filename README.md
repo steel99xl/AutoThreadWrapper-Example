@@ -1,4 +1,4 @@
-#SillyDownloader
+# SillyDownloader
 SD (SillyDownlaoder) main goal is to be an example of the ```AutoThreadWraper```
 in a real world use
 
@@ -9,6 +9,6 @@ The only argument options are ```SD [LINK] , [FILE_NAME]```
 the partern can be repeated indeffinetly
 
 
-#Requierments
+# Requierments
 C++ 17 or newer
 libcurl 
