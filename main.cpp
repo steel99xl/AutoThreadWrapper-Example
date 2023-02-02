@@ -79,7 +79,7 @@ int main(){
         std::cout << "]";
         std::cout << " - Avalible Threads";
         
-        Input = UserAutoCap();
+        Input = sillyinput::UserAutoCap();
 
         if((std::strcmp(Input.c_str(),"EXIT") == 0 || std::strcmp(Input.c_str(),"QUIT") == 0) && AvalibleWorkers == threadlimit){
             isRunning = false;
@@ -89,9 +89,9 @@ int main(){
             std::cout << "Enter URL for file" << std::endl;
              for(int i = 0; i < threadlimit; i++){
                 if(!DLRS[i].IsWorking){
-                    DLRS[i].SetURL(UserInput().c_str());
+                    DLRS[i].SetURL(sillyinput::UserInput().c_str());
                     std::cout << "Enter a name for the file" << std::endl;
-                    DLRS[i].SetName(UserInput().c_str());
+                    DLRS[i].SetName(sillyinput::UserInput().c_str());
                     autothread::StartWork(&DLRS[i]);
                     AvalibleWorkers--;
                     break;
