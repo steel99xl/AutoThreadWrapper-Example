@@ -55,12 +55,13 @@ struct Downloader : autothread::Thread{
 
 
 
-int main(){
+int main(int argc, char *argv[]){
     Downloader DLRS[threadlimit];
     bool isRunning = true;
     int AvalibleWorkers = 0;
 
     std::string Input;
+
 
     while(isRunning){
         AvalibleWorkers = 0;
@@ -87,7 +88,7 @@ int main(){
 
         if(std::strcmp(Input.c_str(),"DOWNLOAD") == 0 || std::strcmp(Input.c_str(),"DL") == 0){
             std::cout << "Enter URL for file" << std::endl;
-             for(int i = 0; i < threadlimit; i++){
+            for(int i = 0; i < threadlimit; i++){
                 if(!DLRS[i].IsWorking){
                     DLRS[i].SetURL(sillyinput::UserInput().c_str());
                     std::cout << "Enter a name for the file" << std::endl;
