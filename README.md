@@ -8,6 +8,7 @@ file
 
 # Requierments
 C++ 17 or newer
+
 libcurl 
 
 # Build
